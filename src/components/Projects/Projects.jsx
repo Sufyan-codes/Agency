@@ -1,6 +1,6 @@
 import React from 'react'
-import './Projects.css'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import './Projects.css';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
 import data from '../../components/data.json'
 import { sliderSettings } from '../Common';
@@ -24,7 +24,7 @@ export default function Projects() {
                                 <div className='Projects__swiper'>
                                     <img className='projects_img' src={card.imageUrl} alt="projects" />
                                     <div className="projects__detail">
-                                        <span className='desc'>{card.description}</span>
+                                        <span className='descs'>{card.description}</span>
                                     </div>
                                 </div>
  
