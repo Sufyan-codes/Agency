@@ -1,0 +1,67 @@
+.projects__container {
+    margin-top: 25rem;
+    height: 100vh;
+}
+.projects__title {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.7rem;
+}
+
+.swiper__container {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.projects_img {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+.Projects__swiper {
+    width: 23rem;
+    height: 21rem;
+    margin: 0 auto;
+}
+
+.projects__detail {
+    font-size: 1rem;
+    position: relative;
+    top: 0rem;
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+}
+
+.projects__detail > span {
+    color: black;
+}
+.projects__detail:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+.desc {
+    padding: 0 2rem;
+    opacity: 1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.control a {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.button {
+    display: flex;
+
+}

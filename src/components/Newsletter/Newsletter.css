@@ -1,0 +1,56 @@
+.newsletter {
+    background:linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./compressed.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    color: white;
+}
+
+.newsletter__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.newsletter__subtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.newsletter__title {
+    font-family: 'Nova Square', sans-serif;
+    text-transform: capitalize;
+}
+
+.form {
+    background: white;
+    width: 70%;
+    margin: 0 auto;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+input {
+    border: none;
+    background: none;
+}
+
+.subButton {
+    background: black;
+    color: white;
+    font-size: .75rem;
+    height: 2.2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    margin-top: -.5rem;
+    margin-right: -.5rem;
+}
+    

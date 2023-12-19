@@ -1,0 +1,31 @@
+.team__title {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.team__container {
+    height: 100vh;
+    text-align: center;
+}
+
+.team {
+    margin-top: 3rem;
+}
+
+.card {
+    color: black;
+    margin-top: 1rem;
+}
+
+.sub {
+    font-size: 1rem;
+}
+.name, .sub {
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    float: right;
+}

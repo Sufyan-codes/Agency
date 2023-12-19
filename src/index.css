@@ -1,0 +1,347 @@
+/*-----------------------------------*\ 
+  #style.css
+\*-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Syncopate:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Lato:wght@700;900&family=Nova+Square&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Young+Serif&display=swap');
+/**
+ * copyright 2023 @sufyandev 
+ */
+
+
+
+
+
+/*-----------------------------------*\ 
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.light-theme {
+
+    /**
+     * light theme colors 
+     */
+
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #131417;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    --transparent-light-color: rgba(255, 255, 255, .05);
+    --transparent-dark-color: rgba(0, 0, 0, .75);
+
+}
+
+.dark-theme {
+
+    /**
+     * dark theme colors 
+     */
+
+    --background-primary: hsl(218, 23%, 23%);
+    --background-secondary: hsl(220, 26%, 14%);
+
+    --action-primary: hsl(216, 15%, 52%);
+    --action-secondary: hsl(218, 23%, 23%);
+
+    --foreground-primary: hsl(210, 38%, 95%);
+    --foreground-secondary: hsl(211, 25%, 84%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+
+    --accent: hsl(229, 76%, 66%);
+
+}
+
+:root {
+
+    /**
+     * color
+     */
+
+    --white: hsl(0, 0%, 100%);
+
+    /**
+     * typography 
+     */
+
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+
+    /**
+     * spacing 
+     */
+
+    --gap: 2rem;
+
+}
+
+
+
+
+
+/*-----------------------------------*\ 
+    #RESET
+  \*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-background-color);
+}
+
+li {
+    list-style: none;
+}
+
+img,
+button {
+    display: block;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--light-color-alt);
+    letter-spacing: 1px;
+    transition: background-color .25s, color .25s;
+    background-color: #FBFEFD;
+}
+
+
+:focus {
+    outline-offset: 4px;
+}
+
+
+/**
+   * scrollbar style
+  */
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 20px;
+    border: 4px solid;
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+    border-color: hsl(0, 0%, 90%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    border-color: hsl(219, 27%, 20%);
+}
+
+.light-theme::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 90%);
+}
+
+.dark-theme::-webkit-scrollbar-track {
+    background: hsl(219, 27%, 20%);
+}
+
+
+
+
+
+/*-----------------------------------*\ 
+    #BASE STYLE
+  \*-----------------------------------*/
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    display: block;
+    color: var(--foreground-primary);
+}
+
+.h1 {
+    font-family: 'Nova Square', sans-serif;
+    font-size: var(--fs-1);
+    font-weight: 900;
+}
+
+.h2 {
+    font-size: var(--fs-2);
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: var(--fs-3);
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: var(--fs-4);
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: var(--fs-4);
+}
+
+.text-tiny {
+    font-size: var(--fs-5);
+}
+
+
+/* Theme color change */
+body.light-theme{
+    --light-color: #3d3d3d;
+    --light-color-alt: rgba(0,0,0,.6);
+    --primary-background-color: #fff;
+    --secondary-background-color: #f1f1f1;
+    --hover-light-color: #fff;
+    --transparent-dark-color: var(--secondary-background-color);
+    --transparent-light-color: rgba(0,0,0,.1);
+}
+
+
+
+/*-----------------------------------*\ 
+    #REUSED STYLE
+  \*-----------------------------------*/
+
+  .container{
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+.place-items-center{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section:not(.featured-articles){
+    padding-block: 5rem;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.screen-sm-hidden{
+    display: none;
+}
+
+
+
+/*-----------------------------------*\ 
+    #Extra style for dark theme
+  \*-----------------------------------*/
+  @media screen and (min-width:768px) {
+    .about__detail {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .projects__container {
+        margin-top: 2rem;
+        
+    }
+    .projects_img {
+        width: 450px;
+        height: 250px;
+    }
+    .projects__detail {
+        width: 100%;
+    }
+    .team{
+        gap: 1rem;
+    }
+
+    .team__img {
+        width: 17rem;
+    }
+
+    team__container {
+        margin-top: 3rem;
+    }
+  }
+
+ 
+  @media screen and (min-width:976px) {
+        .container {
+            max-width: 80%;
+        }
+        .about__detail {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+        }
+
+        .about__subtitle {
+            width: 550px;
+        }
+
+  
+        .projects_img {
+            width: 550px;
+            height: 350px;
+            margin: 0 auto;
+            margin-left: -5rem;
+        }
+        .projects__detail {
+            width: 100%;
+        }      
+        .swiper__container {
+            margin-top: 2rem;
+        }
+        .team__img {
+            width: 20rem;
+            height: 15rem;
+        }
+
+        .card {
+            text-align: center;
+            margin-right: 13rem;
+        }
+
+          
+  }
+  

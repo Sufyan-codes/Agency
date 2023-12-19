@@ -1,0 +1,48 @@
+.about__container {
+    margin-top: 2rem;
+    height: 100vh;
+}
+.about__title {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about__detail {
+    display: grid;
+    place-items: center;
+}
+.about__img {
+    width: 350px;
+    margin: 0 auto;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.about__subtitle {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.about__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: small;
+    margin-bottom: 2rem;
+}
+
+.about__item span{
+    background: black;
+    color: white;
+    padding: .2rem .2rem;
+    font-size: .5rem;
+    margin-right: .5rem;
+}
+
+.about__link {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
