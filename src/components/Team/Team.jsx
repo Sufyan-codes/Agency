@@ -11,7 +11,7 @@ export default function Team() {
             <div className="team__container">
                 <h1 className="team__title">Team</h1>
 
-
+ 
                 <Swiper {...sliderSettings} className='team'>
                     <SliderButtons />
 

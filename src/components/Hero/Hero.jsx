@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="home container">
       <div className="home__container">
-
+ 
         <h1 className="home__title">
           Smart technology in <br /> your home
         </h1>

@@ -20,8 +20,8 @@ export default function About() {
             </h1>
 
             <p className="about__subtitle">
-              We have over 4000+ unbiased reviews and our customers trust our Plante
-              process and delivery service everytime
+              We have over 40+ unbiased reviews & customers trust our 
+              process, delivery & service everytime
             </p>
 
             <ul className="about__list">
