@@ -9,26 +9,33 @@
     text-align: center;
 }
 
-.team {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
     margin-top: 3rem;
-}
-
-.card {
-    color: black;
-    margin-top: 1rem;
-}
-
-.sub {
-    font-size: 1rem;
-}
-.name, .sub {
     text-align: center;
 }
 
-.right {
+.projects__card {
     display: flex;
-    float: right;
+    flex-direction: column;
+}
+
+.projects__card img {
+    width: 300px;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+span {
+    margin-right: 2rem;
+}
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 1rem;
 }

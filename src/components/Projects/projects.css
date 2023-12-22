@@ -2,16 +2,16 @@
     margin-top: 25rem;
     height: 100vh;
 }
+
 .projects__title {
     font-family: 'Nova Square', sans-serif;
     font-size: 1.7rem;
 }
 
 .swiper__container {
-display: flex;
-justify-content: center;
-flex-direction: column;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .projects_img {
@@ -36,9 +36,10 @@ flex-direction: column;
     text-align: center;
 }
 
-.projects__detail > span {
+.projects__detail>span {
     color: black;
 }
+
 .projects__detail:hover {
     opacity: 1;
     transition: .2s;
@@ -51,16 +52,18 @@ flex-direction: column;
     font-weight: 500;
     margin-top: 1.5rem;
 }
+
 .control {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .control a {
     font-size: 1rem;
     text-decoration: underline;
 }
+
 .button {
     display: flex;
 

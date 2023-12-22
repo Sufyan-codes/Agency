@@ -1,9 +1,6 @@
 import React from 'react'
 import './Team.css'
 
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
-import data from '../../components/data.json'
-import { sliderSettings } from '../Swiper'
 
 export default function Team() {
     return (
@@ -11,31 +8,26 @@ export default function Team() {
             <div className="team__container">
                 <h1 className="team__title">Team</h1>
 
+                <div className="projects">
+
+                    <div className="projects__card">
+                        <img src="./irene-strong-v2aKnjMbP_k-unsplash.jpg" alt="" />
+                        <span className="name">Anil Schmoe</span>
+                        <span className="title">Drone pilot</span>
+                    </div>
+                    <div className="projects__card">
+                        <img src="./christian-buehner-DItYlc26zVI-unsplash.jpg" alt="" />
+                        <span className="name">Aaryan Doe</span>
+                        <span className="title">Software engineer</span>
+                    </div>
+                    <div className="projects__card">
+                        <img src="./african-american-young-woman-s-half-length-portrait-beautiful-female-model.jpg" alt="" />
+                        <span className="name">Jan Doe</span>
+                        <span className="title">Sales rep</span>
+                    </div>
+
+                </div>
  
-                <Swiper {...sliderSettings} className='team'>
-                    <SliderButtons />
-
-                    {
-                        data.map((card, i) => (
-                            <SwiperSlide key={i}>
-
-                                 
-                                     <div className='Projects__swiper team'>
-                                        <img className='projects_img team__img' src={card.team} alt="projects" />
-                                        <div className="projects__details card">
-                                            <span className='name'>{card.name}</span>
-                                            <p className="sub">{card.sub}</p>
-                                           
-                                        </div>
-                                    </div>
-                                
-
-                            </SwiperSlide>
-
-                        ))
-                    }
-
-                </Swiper>
 
             </div>
         </section>
